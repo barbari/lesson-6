@@ -31,13 +31,13 @@
 
 <script type="text/javascript">
 
-// // redbox animates first and then bluebox
+// redbox animates first and then bluebox
 
-// 	$(document).ready(function(){
-// 		$(".redBox").animate({ opacity:0.1, width:600}, 1000, function(){
-// 			$(".blueBox").animate({ opacity:0.3, width:1200}, 3000);
-// 			});
-// 	});
+	$(document).ready(function(){
+		$(".redBox").animate({ opacity:0.1, width:600}, 1000, function(){
+			$(".blueBox").animate({ opacity:0.3, width:1200}, 3000);
+			});
+	});
 
 
 // // redbox and blue box will animate together
@@ -61,7 +61,7 @@
 // 		});
 // 	});
 
-// // click on title removes redbox and bluebox one by one
+// // click on title hides redbox and bluebox and title one after another
 // 	$(document).ready(function(){
 // 		$("h1").click(function(){
 // 			$(".redBox").hide(2000, function(){
@@ -73,7 +73,30 @@
 // 	});
 
 
-// 	// click on title removes redbox and bluebox one by one then remove title itself, but if you click on stop button at anytime it's stops that process
+// // click on title fades redbox and bluebox and title one after another
+// 	$(document).ready(function(){
+// 		$("h1").click(function(){
+// 			$(".redBox").fadeOut(1000, function(){
+// 				$(".blueBox").fadeOut(1000, function(){
+// 				$("h1").fadeOut(2000);
+// 			});
+// 			});
+// 		});
+// 	});
+
+// // click on title fades redbox and bluebox and title one after another
+// 	$(document).ready(function(){
+// 		$("h1").click(function(){
+// 			$(".redBox").slideUp(1000, function(){
+// 				$(".blueBox").slideUp(1000, function(){
+// 				$("h1").slideUp(2000);
+// 			});
+// 			});
+// 		});
+// 	});
+
+
+// 	// click on title hides redbox and bluebox one by one then remove title itself, but if you click on stop button at anytime it's stops that process
 
 // 	 $(document).ready(function(){
 // 		$("h1").click(function(){
