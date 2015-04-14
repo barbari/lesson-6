@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <style type="text/css">
+
+.redBox{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+
+}
+
+.blueBox{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+
+}
+</style>
+
+</head>
+<body>
+<button id="stopBtn">stop</button><br><br>
+<h1> Title</h1>
+<div class="redBox"> </div> <br><br>
+<div class="blueBox"> </div>
+
+
+
+
+
+<script type="text/javascript">
+
+// // redbox animates first and then bluebox
+
+// 	$(document).ready(function(){
+// 		$(".redBox").animate({ opacity:0.1, width:600}, 1000, function(){
+// 			$(".blueBox").animate({ opacity:0.3, width:1200}, 3000);
+// 			});
+// 	});
+
+
+// // redbox and blue box will animate together
+// $(document).ready(function(){
+// 		$(".redBox").animate({ opacity:0.1, width:600}, 1000);
+// 		$(".blueBox").animate({ opacity:0.3, width:1200}, 3000);
+// 	});
+
+// // click on red box triggers bluebox animation
+// 	$(document).ready(function(){
+// 		$(".redBox").click(function(){
+// 			$(".blueBox").animate({ opacity:0.3, width:1200}, 3000);
+// 		});
+// 	});
+
+// // click on red box triggers bluebox to hide
+
+// 	$(document).ready(function(){
+// 		$(".redBox").click(function(){
+// 			$(".blueBox").hide(3000);
+// 		});
+// 	});
+
+// // click on title removes redbox and bluebox one by one
+// 	$(document).ready(function(){
+// 		$("h1").click(function(){
+// 			$(".redBox").hide(2000, function(){
+// 				$(".blueBox").hide(2000, function(){
+// 				$("h1").hide(2000);
+// 			});
+// 			});
+// 		});
+// 	});
+
+
+// 	// click on title removes redbox and bluebox one by one then remove title itself, but if you click on stop button at anytime it's stops that process
+
+// 	 $(document).ready(function(){
+// 		$("h1").click(function(){
+// 			$(".redBox").hide(2000, function(){
+// 				$(".blueBox").hide(2000, function(){
+// 				$("h1").hide(2000);
+// 				});
+			
+// 			});
+
+// 		});
+	
+// 		$("#stopBtn").click(function(){
+//     		$(".redBox").stop();
+//    			 $(".blueBox").stop();
+
+// 	});
+// });
+
+
+
+
+
+</script>
+	
+</body>
+</html>
+
+
